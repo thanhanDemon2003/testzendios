@@ -1,0 +1,1605 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <title>ZenDiOS - Giải pháp Phonefarm iOS Đầu Tiên tại VN</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ZenDiOS - Giải pháp Phonefarm iOS Đầu Tiên tại VN">
+    <meta name="keywords" content="ZenDiOS, phonefarm, iOS, automation, marketing">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Borel&family=Bungee+Shade&family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patrick+Hand&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS animation on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <!-- Main css -->
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #ff4e00;
+            --secondary-color: #ffa700;
+            --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+        
+        /* Custom fonts and styles */
+        body {
+            font-family: 'Lexend', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-family: 'Asap', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+        
+        .patrick-hand {
+            font-family: 'Patrick Hand', cursive;
+        }
+        
+        .logo-text {
+            font-family: 'Bungee Shade', sans-serif;
+        }
+        
+        /* Background styles */
+        .bg-gradient {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bg-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuXzEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUiIGhlaWdodD0iNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuXzEpIi8+PC9zdmc+');
+            z-index: 0;
+        }
+        
+        .bg-gradient * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .light-bg {
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .light-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 30%;
+            background: radial-gradient(circle, rgba(255, 78, 0, 0.1) 0%, rgba(255, 78, 0, 0) 70%);
+            z-index: 0;
+        }
+        
+        /* Animation and effects */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse-btn {
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 0 rgba(255, 78, 0, 0.7);
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 78, 0, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 78, 0, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 78, 0, 0);
+            }
+        }
+        
+        .hover-up {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-up:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Card styles */
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%; /* Đảm bảo tất cả card đều có chiều cao bằng nhau */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-special {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .card-special::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -16px;
+            right: -16px;
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+            background-color: rgba(255, 78, 0, 0.2);
+            transform: scale(1);
+            transform-origin: 50% 50%;
+            transition: transform 0.4s ease-out;
+        }
+        
+        .card-special:hover::before {
+            transform: scale(30);
+        }
+        
+        /* Button styles */
+        .btn {
+            border-radius: 30px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all .3s;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Special sections */
+        .comparison-table {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comparison-table .table thead th {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-weight: 600;
+        }
+        
+        .comparison-table .table tbody td {
+            padding: 15px;
+            border-color: #eee;
+        }
+        
+        .icon-box {
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            background-color: white;
+            transition: all 0.3s ease;
+            height: 100%; /* Đảm bảo tất cả icon box đều có chiều cao bằng nhau */
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 20px 20px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            height: calc(100% - 60px); /* Chiều cao cố định trừ đi margin */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-card .user-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: -40px;
+            left: 30px;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        /* Navigation */
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar {
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(255, 78, 0, 0.95) !important;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+        
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* FAQ accordion */
+        .accordion .card {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: auto; /* Cho phép card có chiều cao tự động */
+        }
+        
+        .accordion .card-header {
+            background-color: #f8f9fa;
+            border: none;
+            padding: 0;
+        }
+        
+        .accordion .card-header button {
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+            font-weight: 600;
+            color: #333;
+            position: relative;
+            text-decoration: none;
+        }
+        
+        .accordion .card-header button::after {
+            content: '\e64b';
+            font-family: 'themify';
+            position: absolute;
+            right: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .accordion .card-header button[aria-expanded="true"]::after {
+            transform: rotate(180deg);
+        }
+        
+        /* Custom features highlights */
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-list li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        /* Contact form */
+        .contact-form .form-control {
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form .form-control:focus {
+            box-shadow: none;
+            border-color: var(--primary-color);
+        }
+        
+        /* Pricing table */
+        .pricing {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%; /* Đảm bảo tất cả card pricing có chiều cao bằng nhau */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .pricing:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing .card-head {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .pricing .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            margin: 15px 0;
+        }
+        
+        .pricing.popular {
+            transform: scale(1.05);
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing.popular::before {
+            content: "POPULAR";
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ffcc00;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .pricing .list-group-item {
+            padding: 12px 20px;
+            border-color: #f0f0f0;
+        }
+        
+        .pricing .list-group-flush {
+            flex-grow: 1; /* Để list-group chiếm hết không gian còn lại */
+            margin-bottom: 0;
+        }
+        
+        .pricing .card-body {
+            padding: 20px;
+            margin-top: auto; /* Đẩy card-body xuống dưới cùng */
+        }
+        
+        /* Equal height text ellipsis for card descriptions */
+        .card-text-ellipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* Số dòng muốn hiển thị */
+            -webkit-box-orient: vertical;
+            min-height: auto; /* Loại bỏ chiều cao tối thiểu cố định */
+            margin-bottom: 15px;
+        }
+        
+        /* Floating Elements Animation */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+            animation: floatingBubble 6s infinite ease-in-out;
+            opacity: 0.5;
+        }
+        
+        @keyframes floatingBubble {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -50px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--gradient-primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            left: 0;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            text-align: left;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        
+        .timeline-item .content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Text color updates */
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Giải pháp cho vấn đề thẻ card không cân đối */
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .feature-card .card-body {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        .feature-card .card-title {
+            margin-bottom: 15px;
+        }
+        
+        .feature-card .card-text {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card .btn {
+            margin-top: auto;
+        }
+        
+        /* Mobile fixes */
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            .timeline::before {
+                left: 40px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                left: 0;
+                text-align: left;
+                padding-left: 70px;
+                padding-right: 20px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item::after,
+            .timeline-item:nth-child(even)::after {
+                left: 30px;
+            }
+            
+            .pricing.popular {
+                transform: scale(1);
+                margin: 30px 0;
+            }
+            
+            .navbar-nav {
+                background-color: rgba(255, 78, 0, 0.95);
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            /* Fix cho cards trên mobile */
+            .card-text-ellipsis {
+                min-height: auto;
+                -webkit-line-clamp: 3;
+            }
+            
+            .testimonial-card {
+                margin: 50px 10px 10px 10px;
+                padding: 20px;
+                height: auto;
+            }
+            
+            .testimonial-card .user-img {
+                width: 60px;
+                height: 60px;
+                top: -30px;
+                left: 20px;
+            }
+            
+            .pricing .list-group-item {
+                padding: 10px 15px;
+            }
+            
+            .pricing .card-head {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+    <div class="nav-menu fixed-top bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <span class="logo-text">ZenDiOS</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> 
+                            <span class="navbar-toggler-icon"></span> 
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">TÍNH NĂNG</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#benefits">LỢI ÍCH</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#pricing">BẢNG GIÁ</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">LIÊN HỆ</a> </li>
+                                <li class="nav-item"><a href="#trial" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3 pulse-btn">Dùng thử ngay</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-gradient" id="home">
+        <!-- Floating Elements -->
+        <div class="floating-element" style="background-color: rgba(255,255,255,0.1); width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+        <div class="floating-element" style="background-color: rgba(255,255,255,0.1); width: 150px; height: 150px; top: 60%; left: 80%;"></div>
+        <div class="floating-element" style="background-color: rgba(255,255,255,0.05); width: 200px; height: 200px; top: 40%; left: 30%;"></div>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="animate__animated animate__fadeInDown" data-aos="fade-right">ZenDiOS</h1>
+                    <p class="tagline animate__animated animate__fadeInUp text-white" data-aos="fade-right" data-aos-delay="100">Giải pháp Phonefarm iOS Đầu Tiên tại VN</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s text-dark" data-aos="fade-right" data-aos-delay="200">Giải pháp quản lý đa thiết bị iOS vượt qua mọi rào cản kiểm duyệt - Điều khiển hoàn toàn từ cloud, mọi lúc, mọi nơi</p>
+                    <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#contact" class="btn btn-light pulse-btn mr-2 "><i class="ti-headphone-alt"></i> Tư vấn ngay</a>
+                        <a href="#features" class="btn btn-outline-light "><i class="ti-arrow-down"></i> Tìm hiểu thêm</a>
+                    </div>
+                    <div class="mt-5">
+                        <span class="dancing-font text-white">Phonefarm iOS lần đầu tiên được thương mại hóa</span>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="/images/icon.png" alt="phone" class="img-fluid floating" style="max-height: 400px;" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="icon-box hover-up">
+                        <div class="icon-circle mx-auto">
+                            <i class="ti-crown"></i>
+                        </div>
+                        <h4>Tiên Phong</h4>
+                        <p>Phần mềm Phonefarm iOS đầu tiên trên thị trường với đầy đủ tính năng hoàn thiện</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon-box hover-up">
+                        <div class="icon-circle mx-auto">
+                            <i class="ti-shield"></i>
+                        </div>
+                        <h4>Ổn Định & An Toàn</h4>
+                        <p>Tỷ lệ tồn tại tài khoản cao hơn 85% so với Android</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="icon-box hover-up">
+                        <div class="icon-circle mx-auto">
+                            <i class="ti-cloud"></i>
+                        </div>
+                        <h4>Cloud Đột Phá</h4>
+                        <p>Nền tảng cloud đột phá cho phép quản lý từ xa trên mọi thiết bị, mọi lúc, mọi nơi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section light-bg" id="features" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">TIÊN PHONG TRÊN THỊ TRƯỜNG</h6>
+                <h2>Phonefarm iOS Đầu Tiên Trên Thị Trường</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+                <p class="lead">Tích hợp toàn bộ công nghệ phonefarm từ cơ bản đến nâng cao trên nền tảng iOS bảo mật</p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card feature-card card-special hover-up" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3" style="font-size: 2.5rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></span>
+                                <h4 class="card-title mb-0">Hoàn Thiện</h4>
+                            </div>
+                            <p class="card-text">Phần mềm Phonefarm iOS đầu tiên trên thị trường với đầy đủ tính năng hoàn thiện. Tích hợp toàn bộ công nghệ phonefarm từ cơ bản đến nâng cao trên nền tảng iOS bảo mật.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Xem chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card feature-card card-special hover-up" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="ti-settings gradient-fill ti-3x mr-3" style="font-size: 2.5rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></span>
+                                <h4 class="card-title mb-0">Chuyên nghiệp</h4>
+                            </div>
+                            <p class="card-text">Được phát triển bởi đội ngũ chuyên gia với hàng chục năm kinh nghiệm trong lĩnh vực automation. Giao diện và trải nghiệm người dùng liên tục được cập nhật bởi đội UX/UI chuyên nghiệp.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Xem chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card feature-card card-special hover-up" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="ti-lock gradient-fill ti-3x mr-3" style="font-size: 2.5rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></span>
+                                <h4 class="card-title mb-0">Cloud Đột Phá</h4>
+                            </div>
+                            <p class="card-text">Nền tảng cloud đột phá cho phép quản lý từ xa trên mọi thiết bị, mọi lúc, mọi nơi. Không cần mang theo thiết bị, tự do làm việc từ bất kỳ đâu.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Xem chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="perspective-phone floating">
+                        <img src="/images/perspective.png" alt="perspective phone" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box-icon mb-4"><i class="ti-help-alt text-primary ti-3x"></i></div>
+                    <h2 class="mb-4">BẠN ĐANG GẶP PHẢI VẤN ĐỀ?</h2>
+                    <ul class="list-unstyled feature-list">
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="ti-close text-danger"></i>
+                            <div>
+                                <h5 class="mb-1">Tài khoản bị khóa liên tục</h5>
+                                <p>Mỗi lần tài khoản bị khóa đồng nghĩa với hàng giờ công sức và doanh thu bị mất trắng.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="ti-close text-danger"></i>
+                            <div>
+                                <h5 class="mb-1">Kiểm duyệt ngày càng nghiêm ngặt</h5>
+                                <p>Các thuật toán kiểm duyệt liên tục cập nhật, phát hiện ngày càng nhanh các tài khoản bot truyền thống.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="ti-close text-danger"></i>
+                            <div>
+                                <h5 class="mb-1">Phonefarm Android không còn hiệu quả</h5>
+                                <p>Các giải pháp Phonefarm Android đã quá phổ biến và dễ dàng bị phát hiện bởi các nền tảng lớn.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="ti-close text-danger"></i>
+                            <div>
+                                <h5 class="mb-1">Quản lý nhiều thiết bị tốn thời gian</h5>
+                                <p>Điều hành farm thủ công đòi hỏi quá nhiều nhân lực và thời gian theo dõi.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="500"><i class="ti-light-bulb mr-2"></i>Khám phá giải pháp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section light-bg" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">SO SÁNH</h6>
+                <h2>TẠI SAO PHONEFARM iOS LÀ TƯƠNG LAI?</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+
+            <div class="comparison-table" data-aos="fade-up">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Tính năng</th>
+                            <th class="text-center">PHONEFARM ANDROID</th>
+                            <th class="text-center">ZENDIOS PHONEFARM iOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Độ tin cậy thiết bị</td>
+                            <td class="text-center"><i class="ti-close text-danger"></i> Dễ bị phát hiện là thiết bị giả lập/bot</td>
+                            <td class="text-center"><i class="ti-check text-success"></i> Sử dụng thiết bị iOS thật (iPhone) nên độ tin cậy tuyệt đối</td>
+                        </tr>
+                        <tr>
+                            <td>Tỷ lệ khóa tài khoản</td>
+                            <td class="text-center"><i class="ti-close text-danger"></i> Tỷ lệ khóa tài khoản cao trên Meta, TikTok, Google</td>
+                            <td class="text-center"><i class="ti-check text-success"></i> Tỷ lệ tồn tại tài khoản cao hơn 85% so với Android</td>
+                        </tr>
+                        <tr>
+                            <td>Độ ổn định</td>
+                            <td class="text-center"><i class="ti-close text-danger"></i> Không ổn định, hay crash app</td>
+                            <td class="text-center"><i class="ti-check text-success"></i> Ổn định liên tục, không bao giờ bị crash khi chạy nhiều ngày</td>
+                        </tr>
+                        <tr>
+                            <td>Chống thuật toán kiểm duyệt</td>
+                            <td class="text-center"><i class="ti-close text-danger"></i> Khó vượt qua các thuật toán chống gian lận mới nhất</td>
+                            <td class="text-center"><i class="ti-check text-success"></i> Vượt qua được mọi thuật toán chống gian lận hiện nay</td>
+                        </tr>
+                        <tr>
+                            <td>Đối thủ cạnh tranh</td>
+                            <td class="text-center"><i class="ti-alert text-warning"></i> Nhiều đối thủ cạnh tranh, thị trường bão hòa</td>
+                            <td class="text-center"><i class="ti-crown text-primary"></i> Không có đối thủ cạnh tranh trực tiếp trong phân khúc Phonefarm iOS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#trial" class="btn btn-primary pulse-btn" data-aos="zoom-in"><i class="ti-rocket mr-2"></i>Đăng ký dùng thử ngay</a>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section" id="benefits" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">LỢI ÍCH CHÍNH</h6>
+                <h2>ZenDiOS Dành Cho Ai?</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <div class="card card-special hover-up h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle mr-3" style="width: 60px; height: 60px; font-size: 24px;">
+                                    <i class="ti-user"></i>
+                                </div>
+                                <h3 class="mb-0">NGƯỜI LÀM MMO</h3>
+                            </div>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="ti-check text-primary"></i> Tăng 300% thu nhập với farm thiết bị ổn định lâu dài</li>
+                                <li><i class="ti-check text-primary"></i> Duy trì tài khoản tồn tại lâu dài không bị khóa</li>
+                                <li><i class="ti-check text-primary"></i> Tự động hóa toàn bộ quy trình kiếm tiền 24/7</li>
+                                <li><i class="ti-check text-primary"></i> Tiết kiệm 70% thời gian quản lý so với cách thủ công</li>
+                                <li><i class="ti-check text-primary"></i> Tự do làm việc mọi nơi - quản lý farm từ điện thoại ngay cả khi đi du lịch</li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-outline-primary">Tìm hiểu thêm <i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card card-special hover-up h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle mr-3" style="width: 60px; height: 60px; font-size: 24px;">
+                                    <i class="ti-bar-chart"></i>
+                                </div>
+                                <h3 class="mb-0">MARKETING & SMM</h3>
+                            </div>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="ti-check text-primary"></i> Vượt qua kiểm duyệt Google, TikTok, Facebook một cách dễ dàng</li>
+                                <li><i class="ti-check text-primary"></i> Quản lý hàng trăm tài khoản từ một giao diện duy nhất</li>
+                                <li><i class="ti-check text-primary"></i> Tự động tương tác, thu thập data với hiệu suất cao</li>
+                                <li><i class="ti-check text-primary"></i> Thay đổi IP/vị trí chính xác 100%, không bị phát hiện</li>
+                                <li><i class="ti-check text-primary"></i> Phản ứng nhanh với thay đổi chiến dịch từ bất kỳ thiết bị nào</li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-outline-primary">Tìm hiểu thêm <i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <p class="dancing-font" style="font-size: 2rem; color: var(--primary-color);">Đột phá công nghệ - Tăng trưởng không giới hạn</p>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section light-bg" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">TÍNH NĂNG CHÍNH</h6>
+                <h2>ZENDIOS LÀM ĐƯỢC GÌ?</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+                <p class="lead">Giải pháp toàn diện vượt qua mọi rào cản kỹ thuật</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-layers"></i>
+                            </div>
+                            <h4 class="card-title">Quản lý đa thiết bị</h4>
+                            <p class="card-text">Điều khiển hàng trăm iPhone từ một giao diện duy nhất, không cần can thiệp vật lý vào từng thiết bị.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-location-pin"></i>
+                            </div>
+                            <h4 class="card-title">Thay đổi IP/vị trí</h4>
+                            <p class="card-text">Công nghệ thay đổi IP và vị trí địa lý chính xác, giúp tài khoản tồn tại lâu dài mà không bị phát hiện.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-heart"></i>
+                            </div>
+                            <h4 class="card-title">Tự động nuôi tài khoản</h4>
+                            <p class="card-text">Tạo lịch sử hoạt động tự nhiên cho các tài khoản mới, tăng độ trust và khả năng vượt kiểm duyệt.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-check-box"></i>
+                            </div>
+                            <h4 class="card-title">Vượt kiểm duyệt</h4>
+                            <p class="card-text">Các thuật toán tiên tiến giúp đảm bảo chiến dịch quảng cáo luôn được phê duyệt, không bị từ chối.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-cloud"></i>
+                            </div>
+                            <h4 class="card-title">Điều khiển cloud linh hoạt</h4>
+                            <p class="card-text">Truy cập và quản lý farm từ bất kỳ thiết bị nào (điện thoại, iPad, laptop) với giao diện responsive.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card feature-card hover-up h-100">
+                        <div class="card-body">
+                            <div class="icon-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 24px;">
+                                <i class="ti-bolt"></i>
+                            </div>
+                            <h4 class="card-title">Tự động hóa script với AI</h4>
+                            <p class="card-text">Xây dựng và vận hành script tự động cho mọi nhu cầu: từ nuôi tài khoản đến tương tác, like, comment.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Chi tiết <i class="ti-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">CASE STUDIES</h6>
+                <h2>Khách Hàng Của Chúng Tôi Đã Thành Công</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <img src="/images/client.png" alt="client" class="user-img">
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">S GROUP</h5>
+                                    <small class="text-primary">Marketing Agency</small>
+                                </div>
+                                <div>
+                                    <span class="badge badge-success p-2">+200%</span>
+                                </div>
+                            </div>
+                            <h5>Tăng 200% hiệu suất quảng cáo</h5>
+                            <p>Đội Marketing của S GROUP đã tăng tỷ lệ số video được đề xuất từ 35% lên 90% và cắt giảm chi phí quảng cáo được 45% sau 3 tháng sử dụng ZenDiOS.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-2">Đọc chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <img src="/images/client.png" alt="client" class="user-img">
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">Anh Tuấn</h5>
+                                    <small class="text-primary">TP.HCM</small>
+                                </div>
+                                <div>
+                                    <span class="badge badge-success p-2">+500%</span>
+                                </div>
+                            </div>
+                            <h5>MMOer tăng doanh thu 5x</h5>
+                            <p>Tôi đã xây dựng farm 500 thiết bị iOS với ZenDiOS, tăng doanh thu từ 15 triệu/tháng khi làm thủ công lên 75 triệu/tháng với cùng một số lượng thiết bị.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-2">Đọc chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <img src="/images/client.png" alt="client" class="user-img">
+                        <div class="content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h5 class="mb-0">Anh Tiến</h5>
+                                    <small class="text-primary">MMOer 15 năm kinh nghiệm</small>
+                                </div>
+                                <div>
+                                    <span class="badge badge-success p-2">+15%</span>
+                                </div>
+                            </div>
+                            <h5>Làm việc hiệu quả khi đi du lịch</h5>
+                            <p>Tôi đã quản lý farm 820 con iphone trong suốt kỳ nghỉ 2 tuần ở Phú Quốc chỉ bằng 1 chiếc điện thoại. Không còn lo lắng về công việc khi đi chơi, doanh thu vẫn tăng 15% so với tháng trước.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-2">Đọc chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary"><i class="ti-file mr-2"></i>Xem thêm case study</a>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section light-bg" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">CÁCH THỨC HOẠT ĐỘNG</h6>
+                <h2>Bắt Đầu Chỉ Trong 3 Bước Đơn Giản</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="content">
+                        <span class="ti-flag-alt text-primary mb-3 d-block" style="font-size: 30px;"></span>
+                        <h4>Bước 1: Cài đặt và kết nối thiết bị iOS</h4>
+                        <p>Quy trình đơn giản để kết nối iPhone vào hệ thống ZenDiOS chỉ trong 5 phút.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-2">Xem hướng dẫn</a>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="content">
+                        <span class="ti-settings text-primary mb-3 d-block" style="font-size: 30px;"></span>
+                        <h4>Bước 2: Thiết lập cấu hình tự động</h4>
+                        <p>Tùy chỉnh các thông số và script tự động phù hợp với mục tiêu kinh doanh của bạn.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-2">Xem hướng dẫn</a>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="content">
+                        <span class="ti-dashboard text-primary mb-3 d-block" style="font-size: 30px;"></span>
+                        <h4>Bước 3: Giám sát và tối ưu hiệu suất</h4>
+                        <p>Theo dõi và điều chỉnh hoạt động của toàn bộ farm từ dashboard trực quan, dễ sử dụng - từ bất kỳ thiết bị nào, bất kỳ đâu thông qua hệ thống cloud.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-2">Xem hướng dẫn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <div class="mb-4">
+                    <span class="patrick-hand" style="font-size: 1.8rem; color: var(--primary-color);">Dễ dàng triển khai - Tự động vận hành 24/7</span>
+                </div>
+                <a href="#trial" class="btn btn-primary pulse-btn"><i class="ti-control-play mr-2"></i>Xem video demo</a>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section" id="pricing" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">CÔNG NGHỆ ĐỘC QUYỀN</h6>
+                <h2>BẢNG GIÁ & CÁC GÓI</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+                <p class="lead">Lựa chọn gói phù hợp với nhu cầu của bạn</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing hover-up h-100">
+                        <div class="card-head">
+                            <small class="text-white">BASIC</small>
+                            <span class="price">Liên hệ</span>
+                            <p class="mb-0 text-white">Phù hợp cho MMOer mới bắt đầu</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Quản lý tối đa 200 thiết bị iOS</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Hỗ trợ kỹ thuật cơ bản</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Cập nhật phần mềm hàng tháng</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Truy cập cloud từ mọi thiết bị</span>
+                            </div>
+                        </ul>
+                        <div class="card-body mt-auto">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Dùng thử ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing popular hover-up h-100">
+                        <div class="card-head">
+                            <small class="text-white">ADVANCE</small>
+                            <span class="price">Liên hệ</span>
+                            <p class="mb-0 text-white">Cho Marketing & SMM</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Quản lý tối đa 500 thiết bị iOS</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Hỗ trợ kỹ thuật ưu tiên 24/7</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Cập nhật phần mềm liên tục</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Script tự động độc quyền</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Truy cập cloud từ mọi thiết bị với giao diện nâng cao</span>
+                            </div>
+                        </ul>
+                        <div class="card-body mt-auto">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Dùng thử ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing hover-up h-100">
+                        <div class="card-head">
+                            <small class="text-white">PREMIUM</small>
+                            <span class="price">Liên hệ</span>
+                            <p class="mb-0 text-white">Dành cho các doanh nghiệp muốn đột phá</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Quản lý tối đa 500 thiết bị iOS</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Hỗ trợ kỹ thuật ưu tiên 24/7</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Cập nhật phần mềm liên tục</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Script tự động độc quyền</span>
+                            </div>
+                            <div class="list-group-item d-flex align-items-center">
+                                <i class="ti-check text-primary mr-2"></i>
+                                <span>Tư vấn chiến lược tối ưu farm</span>
+                            </div>
+                        </ul>
+                        <div class="card-body mt-auto">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">Dùng thử ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 bg-light p-4 rounded text-center" data-aos="fade-up">
+                <h4>Bạn cần giải pháp đặc biệt cho doanh nghiệp quy mô lớn?</h4>
+                <p>Chúng tôi có gói Doanh nghiệp với khả năng quản lý không giới hạn thiết bị iOS (tối thiểu 1000 máy)</p>
+                <a href="#contact" class="btn btn-primary">Liên hệ tư vấn</a>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section pt-0" id="trial" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">FAQ</h6>
+                <h2>Câu Hỏi Thường Gặp</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link w-100 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ZenDiOS có hỗ trợ tất cả phiên bản iOS không?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            ZenDiOS hỗ trợ đầy đủ đến iOS 14. Chúng tôi cập nhật liên tục để đảm bảo tương thích với mọi cập nhật iOS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link w-100 text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Có cần jailbreak thiết bị không?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Có. ZenDiOS hoạt động trên thiết bị iOS đã được jailbreak. Tuy nhiên với công nghệ độc quyền, chúng tôi đã vượt qua cả những bài test gắt gao nhất của GG, Meta, TT, đảm bảo tính bảo mật và ổn định của hệ thống.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link w-100 text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Làm thế nào để không bị phát hiện là bot?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            ZenDiOS sử dụng công nghệ độc quyền mô phỏng hành vi người dùng thực, bao gồm thời gian phản hồi ngẫu nhiên, cử chỉ và tương tác tự nhiên, đặc biệt là trên iOS, một hệ điều hành yêu cầu cực kỳ cao về bảo mật.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link w-100 text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Tôi có thể quản lý farm khi đang đi du lịch không?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Hoàn toàn có thể! ZenDiOS hoạt động trên nền tảng cloud, cho phép bạn truy cập và quản lý toàn bộ farm từ bất kỳ thiết bị nào có kết nối internet - điện thoại, iPad hay laptop. Bạn có thể thiết lập kịch bản, theo dõi hiệu suất và điều chỉnh chiến lược từ bãi biển, quán cà phê hoặc bất kỳ đâu.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section bg-gradient" data-aos="fade-up">
+        <div class="floating-element" style="background-color: rgba(255,255,255,0.1); width: 150px; height: 150px; top: 20%; right: 10%;"></div>
+        <div class="floating-element" style="background-color: rgba(255,255,255,0.05); width: 100px; height: 100px; bottom: 20%; left: 5%;"></div>
+        
+        <div class="container">
+            <div class="call-to-action">
+                <div class="box-icon mb-4">
+                    <span class="ti-mobile gradient-fill ti-3x animate__animated animate__heartBeat animate__infinite animate__slow"></span>
+                </div>
+                <h2 class="animate__animated animate__pulse animate__infinite animate__slower">Trải Nghiệm Ngay Hôm Nay</h2>
+                <p class="tagline px-lg-5">Đăng ký dùng thử và trải nghiệm sự khác biệt của phonefarm iOS đầu tiên trên thị trường. Hỗ trợ kỹ thuật 24/7 từ đội ngũ chuyên gia.</p>
+                <div class="my-4">
+                    <a href="#" class="btn btn-light hover-up mr-2 animate__animated animate__bounceIn">
+                        <img src="/images/appleicon.png" alt="icon" class="mr-2" style="height: 20px;"> App Store
+                    </a>
+                    <a href="#contact" class="btn btn-light hover-up animate__animated animate__bounceIn animate__delay-1s">
+                        <i class="ti-headphone-alt mr-2"></i> Liên hệ tư vấn
+                    </a>
+                </div>
+                <p class="text-white"><small><i>*Hoạt động trên iOS 10.0.5+ đã jailbreak</i></small></p>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="light-bg py-5" id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-primary text-uppercase">LIÊN HỆ NGAY</h6>
+                <h2>Nhận Tư Vấn Và Hỗ Trợ</h2>
+                <div class="line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; background: var(--gradient-primary);"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body contact-form">
+                            <h4 class="mb-4">Gửi yêu cầu tư vấn</h4>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control h-100">
+                                        <option selected disabled>Bạn quan tâm đến gói nào?</option>
+                                        <option>Gói Basic</option>
+                                        <option>Gói Advance</option>
+                                        <option>Gói Premium</option>
+                                        <option>Gói Doanh nghiệp</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" placeholder="Nhu cầu của bạn"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Gửi yêu cầu</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Thông tin liên hệ</h4>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="mr-3 p-3 rounded-circle bg-primary text-white">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Địa chỉ</h6>
+                                    <p class="mb-0">Tầng 5, Tòa nhà Tech Center, Quận 1, TP.HCM</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="mr-3 p-3 rounded-circle bg-primary text-white">
+                                    <i class="ti-email"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Email</h6>
+                                    <p class="mb-0"><a href="mailto:support@zendios.com">support@zendios.com</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="mr-3 p-3 rounded-circle bg-primary text-white">
+                                    <i class="ti-headphone-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Hotline</h6>
+                                    <p class="mb-0"><a href="tel:0987654321">098-765-4321</a></p>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <h5 class="mb-3">Kết nối với chúng tôi</h5>
+                                <div class="d-flex">
+                                    <a href="#" class="mr-3 p-3 rounded-circle bg-light text-primary hover-up">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                    <a href="#" class="mr-3 p-3 rounded-circle bg-light text-primary hover-up">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                    <a href="#" class="mr-3 p-3 rounded-circle bg-light text-primary hover-up">
+                                        <i class="ti-instagram"></i>
+                                    </a>
+                                    <a href="#" class="p-3 rounded-circle bg-light text-primary hover-up">
+                                        <i class="ti-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end .section -->
+    
+    <footer class="bg-dark text-white py-5" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Giới thiệu</h5>
+                    <p>ZenDiOS - Giải pháp Phonefarm iOS Đầu Tiên tại VN. Điều khiển hoàn toàn từ cloud, mọi lúc, mọi nơi.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-light btn-sm mr-2 hover-up">Về chúng tôi</a>
+                        <a href="#" class="btn btn-outline-light btn-sm hover-up">Tuyển dụng</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Liên kết hữu ích</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#features" class="text-white">Tính năng</a></li>
+                        <li class="mb-2"><a href="#benefits" class="text-white">Lợi ích</a></li>
+                        <li class="mb-2"><a href="#pricing" class="text-white">Bảng giá</a></li>
+                        <li class="mb-2"><a href="#trial" class="text-white">Dùng thử</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Blog & Tin tức</h5>
+                    <div class="mb-3">
+                        <a href="#" class="text-white">Phonefarm iOS - Xu hướng mới của ngành MMO</a>
+                        <small class="d-block text-muted">30/01/2025</small>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-white">5 cách vượt qua thuật toán kiểm duyệt mới nhất</a>
+                        <small class="d-block text-muted">15/02/2025</small>
+                    </div>
+                    <a href="#" class="btn btn-outline-light btn-sm hover-up">Xem tất cả</a>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">COPYRIGHT © 2025. ALL RIGHTS RESERVED. ZENDIOS - PHONEFARM iOS ĐẦU TIÊN & HOÀN THIỆN NHẤT</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="text-white mx-2">CHÍNH SÁCH BẢO MẬT</a>
+                    <a href="#" class="text-white mx-2">ĐIỀU KHOẢN SỬ DỤNG</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- AOS Animation on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function() {
+            // Initialize AOS animation
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Smooth scroll to sections
+            $('a[href*="#"]').on('click', function(e) {
+                if(this.hash !== '') {
+                    e.preventDefault();
+                    
+                    const hash = this.hash;
+                    
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+            
+            // Initialize testimonial carousel
+            $('.testimonials').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
